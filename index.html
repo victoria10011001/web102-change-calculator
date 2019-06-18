@@ -1,13 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Change Calculator</title>
-  </head>
-  <body>
-    <!-- Write your markup here -->
 
-    <!-- Don't forget to add your <script> tag here -->
+<head>
+  <meta charset="utf-8">
+  <title>Change Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</head>
 
-  </body>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h1>Change Calculator</h1>
+      </div>
+    </div>
+
+    <div class="row card bg-light">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <span>How much is due for the sale?</span>
+            <input class="w-100" id="amount-due" />
+          </div>
+          <div class="col-sm">
+            <span>How much has the customer given you?</span>
+            <input class="w-100" id="amount-received" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row card bg-light mt-3">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm text-center">
+            <h2>Dollars</h2>
+            <div id="dollars-output">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row card bg-light mt-3">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm text-center">
+              <h4>Quarters</h4>
+                <div id="quarters-output">0</div>
+            </div>
+            <div class="col-sm text-center">
+              <h4>Dimes</h4>
+                <div id="dimes-output">0</div>
+            </div>
+            <div class="col-sm text-center">
+              <h4>Nickels</h4>
+                <div id="nickels-output">0</div>
+              </div>
+              <div class="col-sm text-center">
+                <h4>Pennies</h4>
+                  <div id="pennies-output">0</div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+          <div class="col-sm">
+              <button id="calculate-change" class="btn btn-primary float-right">Calculate Change</button>
+          </div>
+        </div>
+    
+
+
+    
+    
+    
+  </div>
+</body>
+
 </html>
